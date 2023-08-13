@@ -1,0 +1,25 @@
+{
+  "name": "3.-tooling---starting-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "set NODE_OPTIONS=--openssl-legacy-provider && webpack",
+    "build:dev": "set NODE_OPTIONS=--openssl-legacy-provider && webpack-dev-server",
+    "build:prod": "set NODE_OPTIONS=--openssl-legacy-provider &&webpack --config webpack.config.prod.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0",
+    "eslint": "^6.4.0",
+    "webpack": "4.46.0",
+    "webpack-dev-server": "^4.15.0"
+  },
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "lodash": "^4.17.21",
+    "webpack-cli": "3.3.9"
+  }
+}
